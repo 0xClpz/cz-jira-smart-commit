@@ -38,7 +38,6 @@ function prompter(cz, commit) {
         type: "input",
         name: "message",
         message: "GitHub commit message (required):\n",
-        default: ticketNumber,
         validate: function(input) {
           if (!input) {
             return "empty commit message";
@@ -51,6 +50,7 @@ function prompter(cz, commit) {
         type: "input",
         name: "issues",
         message: "Jira Issue ID(s) (required):\n",
+        default: ticketNumber,
         validate: function(input) {
           if (!input) {
             return "Must specify issue IDs, otherwise, just use a normal commit message";
