@@ -1,5 +1,5 @@
 {
-  "name": "cz-jira-smart-commit",
+  "name": "cz-shippr-smart-commit",
   "version": "2.0.1",
   "description": "A commitizen adapter for Jira smart commits",
   "main": "index.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/commitizen/cz-jira-smart-commit.git"
+    "url": "git+https://github.com/0xClpz/cz-jira-smart-commit"
   },
   "keywords": [
     "commitizen",
@@ -25,10 +25,6 @@
     "Jane Kim <jane@janekim.me> (http://janekim.me)"
   ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/commitizen/cz-jira-smart-commit/issues"
-  },
-  "homepage": "https://github.com/commitizen/cz-jira-smart-commit#readme",
   "devDependencies": {
     "babel": "5.8.21",
     "chai": "3.2.0",
@@ -40,6 +36,7 @@
     "with-package": "0.2.0"
   },
   "dependencies": {
+    "current-git-branch": "^1.1.0",
     "inquirer": "^1.1.3"
   }
 }
