@@ -10,7 +10,7 @@ module.exports = {
 };
 
 // Try and find jira ticket with current branch name
-var ticketMatches = branchName().match(/SP-[0-9]+/i);
+var ticketMatches = branchName() ? branchName().match(/SP-[0-9]+/i) : undefined;
 var ticketNumber = ticketMatches ? ticketMatches[0] : undefined;
 
 // When a user runs `git cz`, prompter will
